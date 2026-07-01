@@ -646,3 +646,147 @@ p {
 .muted2 {
 color: #6a6868;
 }
+
+
+/* ===========================
+   Responsive Navbar
+=========================== */
+
+.menu-btn{
+  display:none;
+  background:none;
+  border:none;
+  color:white;
+  font-size:28px;
+  cursor:pointer;
+}
+
+/* Tablet & Mobile */
+@media (max-width:768px){
+
+  .navbar-inner{
+    padding:12px 16px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:12px;
+  }
+
+  .brand{
+    font-size:22px;
+  }
+
+  .brand-icon{
+    font-size:22px;
+  }
+
+  .logo-btn{
+    width:auto;
+    max-width:none;
+    font-size:22px;
+    font-weight:700;
+    color:#f97316;
+  }
+
+  .menu-btn{
+    display:block;
+  }
+
+  .nav-links{
+    display:none;
+    width:100%;
+    flex-direction:column;
+    gap:10px;
+    background:#111827;
+    padding:16px;
+    border-radius:10px;
+    margin-top:10px;
+  }
+
+  .nav-links.open{
+    display:flex;
+  }
+
+  .nav-link{
+    width:100%;
+    text-align:left;
+    padding:12px;
+  }
+
+  .nav-user{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-left:auto;
+  }
+
+  .user-name{
+    display:none;
+  }
+
+  .btn{
+    width:auto;
+    max-width:none;
+    white-space:nowrap;
+  }
+
+  .main-content{
+    padding:16px;
+  }
+
+  .page{
+    gap:16px;
+  }
+
+  .page-header{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .stats-grid{
+    grid-template-columns:1fr;
+  }
+
+  .quick-actions{
+    grid-template-columns:1fr;
+  }
+
+  .feature-grid{
+    grid-template-columns:1fr;
+  }
+
+  .info-grid{
+    grid-template-columns:1fr;
+  }
+
+  .form-row{
+    grid-template-columns:1fr;
+  }
+
+  .list-card{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .list-card-header{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:10px;
+  }
+
+  .rating-modal{
+    width:90%;
+    padding:20px;
+  }
+
+  .modal-buttons{
+    flex-direction:column;
+  }
+
+  .btn-primary,
+  .btn-secondary,
+  .btn-ghost{
+    width:100%;
+  }
+}
